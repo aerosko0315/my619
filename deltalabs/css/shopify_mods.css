@@ -1,0 +1,83 @@
+/*-- Modifications made by kris@smashbrand.com
+======================================*/
+header, header li, footer, footer li, footer ul {
+padding: 0px;
+margin: 0px;
+border: 0px;
+}
+
+footer h2 {
+border:0 none;
+text-align:left;
+text-transform:lowercase;
+}
+
+footer ul.social_media {
+padding-top: 20px;
+}
+
+.white-bg {
+background-color: white;
+}
+
+div.container {
+padding:0px;
+}
+
+.action_button, input.action_button[type="submit"], input.action_button[type="button"] {
+background:none repeat scroll 0 0 #799b37;
+}
+
+#shopify-cart div.container {
+padding: 20px 0;
+width: auto !important;
+}
+
+#shopify-cart {
+margin: 0 auto;
+width: 960px;
+}
+
+@media (max-width: 1190px) {
+
+	#shopify-cart {
+	margin: 0 auto;
+
+	}
+
+}
+
+@media (max-width: 1000px) {
+
+	#shopify-cart {
+	margin: 0 auto;
+	width: 960px !important;
+	}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+	#shopify-cart {
+	width: 768px !important;
+	}
+
+}
+
+@media (max-width: 767px) {
+	#shopify-cart {
+	width: 300px !important;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	#shopify-cart {
+	width: 420px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	#shopify-cart {
+	width: 400px !important;
+	}
+}

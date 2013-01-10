@@ -1,0 +1,182 @@
+[[$head]]
+
+<body>
+
+[[$header]]
+
+<div class="special_page_content">
+
+	<div class="special_container">
+
+		<div class="special_banner_BG">
+        	
+            <div class="special_banner_content" style="background: url([[*special_product_banner_bg_image]]);">
+            
+            	<div class="container">
+            
+                    <div class="banner_product_img">
+                        
+                        [[If? &subject=`[[*special_image_product_page]]` &operator=`notempty` &then=`
+                        <img src="[[*special_image_product_page]]">
+                        `]]
+                        
+                    </div><!-- .banner_product_img -->
+                    
+                    <div class="banner_content">
+                    	
+[[*special_product_text_above_image]]
+                        
+                    </div><!-- .banner_content -->
+                
+                </div><!-- .container -->
+            
+            </div><!-- .special_banner_content -->
+            
+        </div><!-- .special_banner_BG -->
+        
+    </div><!-- .special_container -->
+    
+    <div class="special_container">
+    
+    	<div class="container">
+    
+            <div class="product_shopcart_details">        
+            
+				<form class="form-add-to-cart" method="post" action="http://deltalabsusa.myshopify.com/cart/add">
+					
+					<input type="hidden" value="[[*special_product_shopify_id]]" name="id">
+					
+					<input type="hidden" value="back" name="[[++site_url]][[~[[*id]]]]">
+					
+					<input class="btn buy_now_btn" type="submit" value="buy now">
+	                
+	                <div class="product_price">
+	                    
+	                    <span>was $[[*special_product_price_before_discount]]</span>
+	                    
+	                    <h1>$[[*special_product_price]]</h1>
+	                    
+	                </div><!-- .product_price -->
+    
+				</form>                  
+            
+            </div><!-- .product_shopcart_details -->
+            
+            <div class="clearfix">
+            
+            	<div class="content_left content">
+            	
+[[*special_text_row1]]            	
+                                               
+                </div>
+                    
+            	<div class="content_right content_img">
+            	
+            		[[If? &subject=`[[*special_image_row1]]` &operator=`notempty` &then=`
+                    <img src="[[*special_image_row1]]" alt="[[*pagetitle]]">
+                    `]]
+                        
+                </div>
+            
+            </div><!-- .content -->
+            
+        </div><!-- .container -->
+    
+    </div><!-- .special_container -->
+    
+    [[If? &subject=`[[*special_product_video]]` &operator=`notempty` &then=`
+    
+    <div class="special_container">
+    
+    	<div class="container">
+    
+            <div class="content_video">
+            
+                <div class="video_wrapper">
+                    
+                    <iframe width="1035" height="480" src="[[*special_product_video]]" frameborder="0" allowfullscreen></iframe>
+                    
+                </div><!-- .video_wrapper -->
+            
+            </div><!-- .content_video -->
+            
+        </div><!-- .container -->
+    
+    </div><!-- .special_container -->`]]
+    
+    <div class="special_container">
+    
+    	<div class="container">
+        
+        	<div class="clearfix">
+            
+            	<div class="content_left content_img">
+            	
+            		[[If? &subject=`[[*special_image_row2]]` &operator=`notempty` &then=`                
+                	<img src="[[*special_image_row2]]" alt="[[*pagetitle]]">
+                	`]]
+                
+                </div>
+                
+                <div class="content_right content">
+                
+[[*special_text_row2]]                
+               	
+                </div>
+            
+            </div><!-- .clearfix -->
+            
+            <div class="inner_container clearfix">
+            
+            	<div class="content_left content_img">
+                
+                	[[If? &subject=`[[*special_image_row3]]` &operator=`notempty` &then=`
+                	<img src="[[*special_image_row3]]" alt="[[*pagetitle]]">
+                	`]]
+                
+                </div>
+                
+                <div class="content_right content">
+                
+[[*special_text_row3]]                
+
+                    <p>&nbsp;</p>
+                    <p>&nbsp;</p>
+                    <a href="#" class="btn buy_now_btn">buy now</a>
+                    
+                    <div class="product_price">
+                    	<span>was $[[*special_product_price_before_discount]]</span>
+                    	<h1>$[[*special_product_price]]</h1>
+                    </div>	
+                	
+                </div>
+            	
+            </div><!-- .inner_container -->
+        
+        </div><!-- .container -->
+    
+    </div><!-- .special_container -->
+
+	<div class="wrapper">
+    
+    	<div class="row-fluid">
+			
+			<div class="span12 nurture_nourish_evolve">
+				
+[[$footer_nourish_evolve]]
+				
+			</div><!-- .span12 -->
+			
+		</div>
+    
+    </div><!-- .wrapper -->
+	
+</div><!-- .special_page_content -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+
+</html>

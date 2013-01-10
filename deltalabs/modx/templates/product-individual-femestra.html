@@ -1,0 +1,356 @@
+[[$head]]
+
+<body class="productlayout [[*page_class]]">
+
+[[$header]]
+
+<div class="home_center_BG">
+
+	<div class="wrapper">
+
+		<div class="container product_banner">
+		
+			<div class="row-fluid paddingB25px">
+			
+				
+				<!-- ========= Header Position 1 ========= -->
+			
+			
+				<div class="span4 header_main_image">
+				
+					<img src="[[*product_banner_bottle_image]]" alt="[[*pagetitle]]">
+				
+				</div><!-- .span4 header_main_image -->
+
+				
+				<!-- ========= Header Position 3 ========= -->
+				
+				
+				<div class="span3 header_call_to_action">
+				
+					<div class="header_call_to_action_text">
+				
+						<h4>[[*pagetitle]]</h4>
+						
+						<h5>[[*product_banner_text_above_MSRP]]</h5>
+						
+						<p class="product_info">MSRP <span class="product_info_MSRP">$[[*product_msrp_price]]</span><br/>
+						Buy Direct &amp; Save<br />
+						
+						<span class="product_info_price"><b>$[[*product_direct_price]]</b></span></p>
+						
+						<a href="[[~[[*id]]]]#anchor_options_show_hide"><img class="img-swap add_to_cart click_show_options" src="http://deltalabsusa.com/assets/img/button/add_to_cart_off.png" alt="add_to_cart_off"></a>
+						
+						<p class="product_info_shipping">Plus Shipping &amp; Handling</p>
+					
+					</div><!-- .header_call_to_action_text -->
+					
+					<div class="header_call_to_action_social mobile_hide">
+					
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`facebook-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img class="first" src="assets/img/products/social_header_FB.png" alt="social_header_FB"></a>
+						
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`google-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img src="assets/img/products/social_header_GP.png" alt="social_header_GP"></a>
+						
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`twitter-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img src="assets/img/products/social_header_TW.png" alt="social_header_TW"></a>
+					
+					</div><!-- .header_call_to_action_social -->
+				
+				</div><!-- .span3 header_call_to_action -->
+
+				
+				<!-- ========= Header Position 2 ========= -->
+				
+				
+				<div class="span5 header_title">
+				
+					<div class="mobile_only center mobile_social_icons">
+					
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`facebook-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img src="assets/img/products/social_header_FB.png" alt="social_header_FB"></a>
+						
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`google-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img src="assets/img/products/social_header_GP.png" alt="social_header_GP"></a>
+						
+						<a href="[[getResources? &parents=`-1` &resources=`31` &tpl=`twitter-url-tpl` &showHidden=`1` &includeTVs=`1` &processTVs=`1`]]" target="_blank"><img src="assets/img/products/social_header_TW.png" alt="social_header_TW"></a>
+					
+					</div><!-- .mobile_only -->
+				
+					<hgroup>
+				
+						<h1>[[*product_banner_text_title]]</h1>
+						
+						<h3>[[*product_banner_text_subtitle]]</h3>
+					
+					</hgroup>
+					
+					<div class="header_title_text">
+					
+						<p>[[*content]]</p>
+					
+					</div><!-- .header_title_text -->
+				
+				</div><!-- .span5 header_title -->
+						
+			</div><!-- .row-fluid -->
+		
+		</div><!-- .container product_banner -->
+		
+		
+		
+								
+		<span id="anchor_options_show_hide"></span>
+		
+		<div id="product_options_show_hide" class="container product_options_show_hide">
+		
+			<a class="product_options_hide" href="#anchor_options_show_hide">close</a>
+		
+			<div class="center">
+		
+				<h3>Purchase Options</h3>
+			
+			</div><!-- .center -->
+		
+			<div class="row-fluid">
+					
+				<div class="span6 center">
+				
+					<div class="product_options_show_hide_padding">
+				
+						<img class="marginTminus25px" src="[[*product_purchase_option_column1_image]]" alt="femestra_product_options_single">
+						
+						<form class="form-add-to-cart" method="post" action="http://deltalabsusa.myshopify.com/cart/add">
+							
+							<input type="hidden" value="[[*product_shopify_id-femestra]]" name="id">
+							
+							<input type="hidden" value="back" name="[[++site_url]][[~[[*id]]]]">
+							
+							<span class="product_info_price paddingB10px"><b>$[[*product_direct_price]]</b></span>
+							
+							<p class="product_info_shipping">Plus Shipping & Handling</p>
+										
+							<input type="image" class="img-swap add_to_cart" src="http://deltalabsusa.com/assets/img/button/add_to_cart_off.png" alt="add_to_cart_off">
+										
+						</form>
+						
+						<div class="product_options_show_hide_details">
+						
+[[*product_purchase_option_column1_text]]
+					
+						</div><!-- .product_options_show_hide_details -->
+					
+					</div><!-- .product_options_show_hide_padding -->
+				
+				</div><!-- .span6 -->
+		
+				<div class="span6 center">
+				
+					<div class="product_options_show_hide_padding borderL">
+				
+						<img class="marginTminus25px" src="http://deltalabsusa.com/assets/img/products/femestra/femestra_product_options_ongoing.png" alt="femestra_product_options_single">
+
+							<span class="product_info_price paddingB10px"><b>$[[*product_monthly_cost]] / Month</b></span>
+							
+							<p class="product_info_shipping">Plus Shipping & Handling</p>
+						
+						<a href="[[*product_monthly_url]]"><img class="img-swap add_to_cart" src="http://deltalabsusa.com/assets/img/button/add_to_cart_off.png" alt="add_to_cart_off"></a>
+						
+						<div class="product_options_show_hide_details">
+						
+[[*product_purchase_option_column2_text]]						
+					
+						</div><!-- .product_options_show_hide_details -->
+					
+					</div><!-- .product_options_show_hide_padding -->
+				
+				</div><!-- .span6 -->
+			
+			</div><!-- .row-fluid -->
+		
+		</div><!-- .container -->		
+		
+		
+		
+		
+		
+
+		<div class="container BG_color_white">
+		
+			<div class="row-fluid top3">
+			
+				<div class="span4 top3column1">
+				
+					<div class="borderR top3borderR1 equal_height">
+					
+[[If? &subject=`[[*product_row1_column1_image_top]]` &operator=`notempty` &then=`<img class="marginTminus25px" src="[[*product_row1_column1_image_top]]" alt="[[*pagetitle]]">`]]
+				
+[[*product_row1_column1]]
+					
+					</div><!-- .borderR -->
+				
+				</div><!-- .span4 -->
+
+				<div class="span4 top3column2">
+				
+					<div class="borderR top3borderR2 equal_height">
+				
+[[*product_row1_column2]]
+					
+					</div><!-- .borderR -->
+				
+				</div><!-- .span4 -->
+
+				<div class="span4 top3column3 top3borderR3 equal_height">
+				
+[[If? &subject=`[[*product_row1_column3_image_top]]` &operator=`notempty` &then=`<img class="marginTminus25px" src="[[*product_row1_column3_image_top]]" alt=`[[*pagetitle]]`>`]]			
+				
+[[*product_row1_column3]]
+					
+					<div class="center supplement_facts">
+					
+						<img src="assets/img/products/acai/supplement_facts.png" alt="supplement_facts">
+
+						<a type="button" class="btn" href="#supplement_facts_img1" data-toggle="modal">view label</a>
+						
+						<div class="modal fade" id="supplement_facts_img1">
+							<div class="modal-header">
+								<a class="close" data-dismiss="modal">&times;</a>
+								<div class="center">
+									<h3>Supplement Facts</h3>
+								</div><!-- align center -->
+							</div><!-- .modal-header -->
+							<div class="modal-body">
+								<img src="[[*product_row1_supplement_facts]]" alt="facts">
+							</div><!-- modal-body -->
+						</div><!-- .modal fade -->
+						
+						<div class="clear">&nbsp;</div>
+						
+						<img class="supplement_images" src="assets/img/products/acai/supplement_facts_NSF.png" alt="supplement_facts_NSF">
+						
+						<img class="supplement_images" src="assets/img/products/acai/supplement_facts_cGMP.png" alt="supplement_facts_cGMP">
+
+					</div><!-- align center -->
+					
+					<!-- 2 Images Go Here -->
+				
+				</div><!-- .span4 -->
+			
+			</div><!-- .row-fluid top3 -->
+			
+		</div><!-- .container -->
+
+
+		<div class="container BG_color_white">
+		
+			<div class="row-fluid vid_section">
+			
+				<div class="span6 vid_section_1">
+				
+				[[*product_row2]]
+				
+				</div><!-- .span6 vid_section_1 -->
+
+				<div class="span6 vid_section_2">
+				
+				<div class="video-container-padding">
+					<div class="video-container">
+						<iframe width="853" height="510" src="[[*youtube_video_URL:ParseMediaURL]]"></iframe>
+					</div><!-- .video-container -->
+				</div><!-- .video-container-padding -->
+				
+				</div><!-- .span6 vid_section_2 -->
+			
+			</div><!-- .row-fluid vid_section -->
+			
+		</div><!-- .container -->
+		
+
+		<div class="container BG_color_white">
+		
+			<div class="row-fluid vid_section">
+			
+				<div class="span12">
+				
+					<div class="wrapper_inner">
+				
+						<div class="content_blockquote">
+				
+[[*product_row3]]
+						
+						</div><!-- .content_blockquote -->
+					
+					</div><!-- .wrapper_inner -->
+				
+				</div><!-- .span12 -->
+		
+			</div><!-- .row-fluid vid_section -->
+			
+		</div><!-- .container -->
+	
+
+
+		<div class="container BG_color_white">
+		
+			<div class="row-fluid bottom2">
+			
+[[getResources? &tpl=`products-shared-content` &includeTVs=`1` &resources=`35` &parents=`-1`]]
+
+				<div class="span6 product_FAQ">
+				
+					<h2>[[*pagetitle]] FAQ</h2>
+	
+[[*product_FAQ]]	
+	
+				
+				</div><!-- .span6 -->
+			
+			</div><!-- .row-fluid bottom2 -->
+			
+		</div><!-- .container -->
+		
+	
+		<div class="container footer_call_to_action">
+		
+			<div class="row-fluid">
+			
+				<div class="span3 call_to_action">
+				
+				<a href="founder-message/"><img class="img-swap" src="assets/img/sup_footer/callToActionLinks_1_off.png" alt="callToActionLinks_1_off"></a>
+				
+				</div><!-- .span3 call_to_action -->
+				
+				<div class="span6 call_to_action">
+				
+				<a href="0-carbon-footprint/"><img class="img-swap" src="assets/img/sup_footer/callToActionLinks_2_off.png" alt="callToActionLinks_1_off"></a>
+				
+				</div><!-- .span6 call_to_action -->
+				
+				<div class="span3 call_to_action">
+				
+				<a href="product_femestra.php"><img class="img-swap" src="assets/img/sup_footer/callToActionLinks_3_off.png" alt="callToActionLinks_3_off"></a>
+				
+				</div><!-- .span3 call_to_action -->
+			
+			</div><!-- .row-fluid -->
+			
+			<div class="row-fluid">
+			
+				<div class="span12 nurture_nourish_evolve">
+				
+					<img class="nurture_nourish_evolve" src="assets/img/sup_footer/nurture_nourish_evolve.png" alt="nurture_nourish_evolve">
+				
+				</div><!-- .span12 -->
+			
+			</div><!-- .row-fluid -->
+		
+		</div><!-- .container -->
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .home_center_BG -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+[[$head_blog]]
+
+<body >
+
+[[$header]]
+
+
+<div class="default-content-layout">
+
+	<div class="wrapper">
+
+		<div role="main" class="container">
+		
+			<div class="row-fluid">
+			
+				<div class="span12">
+		
+					<div class="row-fluid">						
+					
+						<div class="span8">
+                        
+                        	<div class="post_padding">
+						
+                                [[!getPage?
+                                     &elementClass=`modSnippet`
+                                     &element=`getResources`
+                                 
+                                     &parents=`30`
+                                     &depth=`1`
+                                     &limit=`5`
+                                     &pageVarKey=`page`
+                                 
+                                     &includeTVs=`1`
+                                     &processTVs=`1`
+                                     &includeContent=`1`
+                                     &showHidden=`1`
+                                     
+                                     &sortby=`publishedon`
+                                     &sortdir=`DESC`
+                                 
+                                     &tpl=`blog-post-tpl`
+                                  ]]
+                                
+                                <div class="pagenavigation">
+                                    <ul class="pageList">
+                                        [[!+page.nav]]
+                                    </ul>
+                                </div>
+                                
+                            </div>
+		
+						</div><!-- .span8 -->
+						
+						<div class="span4">
+						
+							[[$blog_sidebar]]		
+						
+						</div><!-- .span4 -->
+						
+					</div><!-- .row-fluid -->
+				
+				</div><!-- .span12 -->
+			
+			</div><!-- .row-fluid -->
+			
+		</div><!-- end role main .container -->
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .default-content-layout -->
+
+[[$footer]]
+
+
+<!-- Footer javascript placed at the end of the document so the pages load faster -->
+[[$footer_js]]
+
+[[$footer_js_blog]]
+
+</body>
+
+</html>

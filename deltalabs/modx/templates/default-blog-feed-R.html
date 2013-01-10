@@ -1,0 +1,59 @@
+[[$head]]
+
+<body [[If? &subject=`[[*page_class]]` &operator=`notempty` &then=`class="[[*page_class]]"`]]>
+
+[[$header]]
+
+<div class="default-content-layout">
+
+	<div class="wrapper">
+
+		<div role="main" class="container">
+        
+        	<div class="row-fluid">
+        
+                <div class="span12">
+                
+                    <div class="center featured-img">
+                        [[If? &subject=`[[*featured_img]]` &operator=`isnotempty` &then=`<img src="[[*featured_img]]">`]]
+                    </div>
+            
+                    <div class="row-fluid">
+                    
+                        <div class="span8">
+                        
+                            <div class="default-content">
+                        
+                                [[*content]]
+                                
+                            </div><!-- .default-content -->
+        
+                        </div><!-- .span8 -->
+                        
+                        <div class="span4">
+                        
+                            [[$blog_sidebar]]
+                        
+                        </div><!-- .span4 -->
+                        
+                    </div><!-- .row-fluid -->                
+                    
+                </div><!-- .span12 -->
+            
+            </div><!-- .row-fluid -->  
+			
+		</div><!-- end role main .container -->
+		
+		[[$footer_call-to-action]]
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .default-content-layout -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+
+</html>

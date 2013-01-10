@@ -1,0 +1,41 @@
+[[$head]]
+
+<body [[If? &subject=`[[*page_class]]` &operator=`notempty` &then=`class="[[*page_class]]"`]]>
+
+[[$header]]
+
+<div class="default-content-layout">
+
+	<div class="wrapper">
+
+		<div role="main" class="container">
+		
+			<div class="row-fluid">
+			
+				<div class="span12">
+				
+					<div class="default-content">
+				
+						[[*content]]
+						
+					</div><!-- .default-content -->
+
+				</div><!-- .span12 -->
+				
+			</div><!-- .row-fluid -->		
+			
+		</div><!-- end role main .container -->
+		
+		[[$footer_call-to-action]]
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .default-content-layout -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+
+</html>

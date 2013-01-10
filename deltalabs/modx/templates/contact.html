@@ -1,0 +1,114 @@
+[[$head]]
+
+<body [[If? &subject=`[[*page_class]]` &operator=`notempty` &then=`class="[[*page_class]]"`]]>
+
+[[$header]]
+
+<div class="home_center_BG">
+
+	<div class="wrapper">
+
+		<div role="main" class="container">
+		
+			<div class="row-fluid contact_layout">
+			
+				<div class="span7">
+				
+					<div class="contact_L_padding">
+				
+						[[*content]]
+						
+						<div class="center">
+	
+							<img src="assets/img/contact/shadow_bottom.png" alt="shadow_bottom">
+						
+						</div><!-- .center -->
+						
+						<h3>Contact Form</h3>
+                        
+                        [[!FormIt?
+                           &hooks=`email`
+                           &emailTpl=`contact-email-tpl`
+                           &emailSubject=`[[*contact_email_subject]] : [[+subject]]`
+                           &emailTo=`[[*contact_email_address]]`
+                           &emailCC=`[[+email]]`
+                           &successMessage=`Your message has been successfully submitted.`
+                           &validate=`name:required,
+                           			  subject:required,
+                                      message:required,
+                                      email:email:required`]]
+						
+						<form action='[[~[[*id]]]]' method='post'>
+                        
+                        	[[!+fi.successMessage:neq=``:then=`<p style="color:#090;"><strong>[[!+fi.successMessage]]</strong></p>`]]
+                           	[[!+fi.validation_error:eq=`1`:then=`<p><span class="red"><strong>A form validation error occurred. Please check the values you have entered.</strong></span></p>`]]
+						
+							<p>Required fields are marked <span class="red">&#42;</span></p>
+							
+							<fieldset>
+							
+								<legend>YOUR INFORMATION</legend>
+								Name <span class="red">&#42;</span> <span class="red">[[!+fi.error.name]]</span>
+								<br />
+								<input type="text" name="name" value="[[!+fi.name]]"><br />
+								Email <span class="red">&#42;</span> <span class="red">[[!+fi.error.email]]</span>
+								<br />
+								<input type="text" name="email" value="[[!+fi.email]]"><br />
+
+							</fieldset>
+							
+							<fieldset>
+
+								<legend>YOUR MESSAGE</legend>
+								Subject <span class="red">&#42;</span> <span class="red">[[!+fi.error.subject]]</span>
+								<br />
+								<input type="text" name="subject" value="[[!+fi.subject]]"><br />
+								Message <span class="red">&#42;</span> <span class="red">[[!+fi.error.message]]</span>
+								<br />
+								<textarea class="textbox" name="message" value="[[!+fi.message]]">[[!+fi.message]]</textarea>
+								
+							</fieldset>
+								
+								<input class="submit" type="submit" value="Submit">
+						
+						</form>
+					
+					</div><!-- .contact_L_padding -->
+		
+				</div><!-- .span7 -->
+				
+				<div class="span5">
+				
+					<div class="contact_R_padding">
+				
+						<div class="google_map">
+						
+							<img class="paddingB25px" src="[[*contact_img]]" alt="customer-support">
+							
+							<a href="[[*googlemap_url]]" target="_blank"><img src="[[*contact_map_img]]" alt="google-maps"></a>
+						
+						</div><!-- .google_map -->
+						
+						[[*contact_rightside_content]]
+					
+					</div><!-- .contact_R_padding -->
+				
+				</div><!-- .span5 -->
+			
+			</div><!-- .row-fluid -->
+		
+		</div><!-- end role main .container -->
+		
+		[[$footer_call-to-action]]
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .home_center_BG -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+
+</html>

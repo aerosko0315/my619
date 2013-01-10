@@ -1,0 +1,72 @@
+/* CSS Document */
+
+/*** Grid Special Page Styles ***/
+
+.special_grid_content {
+	background-color: #FFF;	
+}
+
+.special_grid_content .container {
+	padding: 0;	
+}
+
+.wrapper, .container {
+	width: 1170px;	
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.special_grid_content .special_product_grid {
+	padding: 90px 0;	
+}
+
+.special_grid_content .special_product_grid .span3 {
+	text-align: center;	
+	width: 277px;
+	margin-bottom: 35px;
+}
+
+.special_grid_content .special_product_grid .span3 .img_container {
+	margin-bottom: 20px;	
+}
+
+.special_grid_content .special_product_grid .span3 .product_details {
+	text-align: center;	
+}
+
+.special_grid_content .special_product_grid .span3 .product_details h2 {
+	font-family: "Arial Black", Gadget, sans-serif;
+	font-size: 24px;
+	color: #666666;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.special_grid_content .special_product_grid .span3 .product_price {
+	margin-bottom: 15px;
+	float: none;
+	margin-left: 0;
+}
+
+.special_grid_content .special_product_grid .span3 .product_details a.buy_now_btn {
+	float: none;
+}
+
+.special_grid_content a.buy_now_btn {
+	font-size: 24px;
+	padding: 12px 34px 12px;
+	border-radius: 34px;
+	-moz-border-radius: 34px;
+	-webkit-border-radius: 34px;
+	float: left;
+}
+
+.special_grid_content .product_price span {
+	color: #999999;	
+	font-size: 20px;
+	padding: 0 3px;
+	background: url(../img/special/crash-out.jpg) center repeat-x;
+}
+
+.special_grid_content .product_price h1 {
+	font-size: 38px;	
+}

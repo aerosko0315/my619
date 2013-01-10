@@ -1,0 +1,103 @@
+[[$head]]
+
+<body class="home">
+
+<header>
+
+	<div id="headerimgsBG" class="home_background_image" style="background: url([[!getImageList? &tvname=`rotating_images` &tpl=`first-rotate-bg-img-tpl` &limit=`1`]]);">
+	
+		<div class="header_BG_banner" style="background-image: url([[!getImageList? &tvname=`rotating_images` &tpl=`first-rotate-main-img-tpl` &limit=`1`]]);">
+		
+		</div><!-- .header_BG_banner -->
+	
+	</div><!-- #headerimgsBG -->
+
+
+	<div class="header_transparent_BG">
+	
+	</div><!-- .header_transparent_BG -->
+
+			
+	<div class="wrapper">
+			
+				<div class="container nav-content">
+				
+					<div class="row-fluid">
+					
+						<div class="span4">
+						
+						<a href="[[~[[++site_start]]]]"><img class="header_logo" src="http://deltalabsusa.com/assets/img/header/logo.png" alt="logo"></a>
+						
+						</div><!-- .span4 -->
+						
+						<div class="span8">
+
+[[$header_functions]]															
+
+[[$header_nav]]
+							
+						</div><!-- .span8 -->
+						
+					</div><!-- .row-fluid -->						
+				
+				</div><!-- .container nav-content -->
+
+
+			<div class="container homepage_rotating_content">
+			
+				<div class="row-fluid">
+				
+					<div class="span12">
+		
+						<div class="home_feel_like_you_again">
+							<!-- Link Rotation in header goes here -->
+							<div id="rotator">
+								<ul>
+									
+                                    [[!getImageList? &tvname=`rotating_images` &tpl=`rotate-link-tpl`]]
+									
+								</ul>
+							</div><!-- #rotator -->
+						</div><!-- .home_feel_like_you_again -->	
+					
+					</div><!-- .span12 -->
+					
+				</div><!-- .row-fluid -->
+				
+			</div><!-- .container -->
+				
+	</div><!-- .wrapper -->
+
+</header>
+
+<div class="home_center_BG BG_color_white">
+
+	<div class="wrapper">
+
+[[$product-listing-grid]]
+		
+		<!-- =============================== BEGIN: BLOG CODE =============================== -->
+		<div class="container home_blog">
+
+			<div class="row-fluid">
+			
+[[getResources? &tpl=`blog-home` &parents=`30` &limit=`4` &includeTVs=`1` &includeContent=`1` &showHidden=`1` &sortby=`publishedon` &sortdir=`DESC`]]		
+
+			</div><!-- .row-fluid -->
+			
+		</div><!-- .container home_blog -->
+		
+		<!-- =============================== END: BLOG CODE =============================== -->
+		
+[[$footer_call-to-action]]		
+	
+	</div><!-- .wrapper -->
+	
+</div><!-- .home_center_BG -->
+
+[[$footer]]
+
+[[$footer_js]]
+
+</body>
+</html>

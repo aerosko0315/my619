@@ -1,0 +1,33 @@
+
+#sidebar.sidebar2 { width:180px; }
+.inside { width:948px; }
+.post .wp-caption img { max-width:516px; }
+.post .wp-caption { max-width:526px; }
+.post .caption-frame img { max-width:520px; }
+.caption, .caption-container { background-color: #333333; color:#ffffff;  }
+.caption a, .caption-container a, #sidebar .caption a { color:#ffffff; }
+.post.thumb .thumbcontent { width:242px; } 
+.post.thumb.page-thumb .thumbcontent { width:255px; }
+.post { font-size:13px; color:#545454; }
+.blog-title a { font-size:44px; color:#333333; }
+.post h1, .slider-h1 { font-size:44px; color:#000000; }
+.post .post-title a { font-size:44px; color:#000000; }
+.post.thumb h2 a, #sidebar .post.thumb h2 a, .thumbheading a.thumb-link, .thumbheading a.bftl-thumb-link { color:#000000; }
+p.description { color:#999999; font-size:20px; }
+a { color:#001dd6; }
+#sidebar a { color:#660000; }
+ul.navigation li a { color:#454545; font-size:14px; }
+ul.navigation li.current_page_item > a, ul.navigation li.current-menu-item > a, ul.navigation li.current-cat > a, ul.navigation li.current-menu-parent > a { color:#660000; }
+
+ul.navigation.navbarbg, ul.navigation.navbarsep { background-color:#f4f4f4; }
+ul.navigation.navbarbg li a, ul.navigation.navbarsep li a, ul.navigation.navboxesbg li a { background-color:#f4f4f4; }
+ul.navigation.navbarbg li a:hover, ul.navigation.navbarsep li a:hover, ul.navigation.navboxesbg li a:hover { background-color:#f0f0f0; }
+
+.post .post-title h2 { padding-right: 58px; }
+.post .post-title .comment a { font-size: 22px; }
+.post.portfolio .post-title h2 { padding-right: 0; }
+post-title.cufonheading, .post.page h1, post.single.h1 { line-height: 0.9em; }
+h1 a:hover { text-decoration:none; }
+
+#sidebar .widgetheading h2, h2.widgettitle { display: block; padding: 3px 0; background: none; font-family: "Georgia", Georgia, 'Times New Roman', Times, serif; color: #000000; font-size: 17px; border-bottom: 1px solid #ddd; text-transform:uppercase; letter-spacing:1px; } #content { margin-right:50px; }
+

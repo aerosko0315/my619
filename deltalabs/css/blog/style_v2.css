@@ -1,0 +1,312 @@
+/**********************************************
+	Blog Posts
+***********************************************/
+.post {	margin: 0 0 100px 0;	line-height: 1.52em; }
+
+.post.page { margin: 0;	}
+
+.feature .post-title, .normal .post-title {	
+	margin-bottom:12px;	
+	position:relative;	
+}
+
+.feature .post-title h2, .normal .post-title h2 { padding-top:0; }
+
+.post .post-title a {
+	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Georgia, 'Times New Roman', Times, serif; */
+	font-weight: normal;	
+	line-height: 1.1em;	
+	font-size: 44px;	
+	color: #333;
+	letter-spacing:-1px;
+}
+
+.post.single .post-title a { padding-right: 0; }
+
+.post .post-title .comment {
+	position:absolute;
+	top:5px;
+	right:0;	
+	width: 43px;
+	height: 46px;
+	background: transparent url(images/comment.gif) no-repeat top right;
+	padding-top: 8px;
+	text-align:center;
+}
+
+.post .post-title .comment a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;	
+	padding-right:0;
+	letter-spacing:0;
+	line-height: 1;	
+}
+
+.retweet {
+	float:left;
+	margin: 2px 0 0 5px;
+	height: 17px;
+	overflow:hidden;
+}
+
+.retweet-inpost {
+	float:right;
+	margin: 0 0 1em 1em;
+}
+
+.post .meta {
+	margin: 10px 0;	
+	border-top: 1px #eee solid;
+	border-bottom: 1px #eee solid;	
+	font-size: 10px;
+	text-transform:uppercase;
+	color: #666;	
+}
+
+.post .meta a {	color: #666; }
+
+.post a.more-link, .post a.comment-link {
+	font-size: 14px;
+	padding-left: 10px;
+	background: url(images/pointer3.gif) no-repeat left 4px;
+	margin-right: 10px;	
+}
+
+.post.thumb a.more-link {
+	font-size: 13px;
+	padding-left: 0;
+	background: none;	
+}
+
+.post.thumb {
+	float:left;	
+	margin: 10px 40px 10px 0;
+	display:inline;
+}
+
+.post.archive.thumb { margin: 0 40px 20px 0; }
+.post.normal .post-title, .page-title { margin-top: 10px; }
+
+.post.thumb .postimage {	
+	overflow:hidden;	
+	line-height: 1;	
+}
+
+.post.normal .postimage {		
+	overflow:hidden;
+	line-height:0;
+}
+
+.postimage.image-below-title { margin-bottom: 10px; }
+.postimage img { background: transparent url(images/loader2.gif) no-repeat center; }
+.post.normal .postimage p { margin:0; }
+.post.thumb a.thumb-link, .post.thumb h2 { font-size:20px; }
+.post.thumb.last-thumb { margin-right:0; }
+.bfthumbs .meta, .post.thumb .meta { border:none; margin: 0;}
+.post.thumb h2 { padding-top: 0; margin-bottom: 7px; }
+.post.thumb .thumbcontent { margin-top: 5px; }
+.post.thumb .thumbcontent p { margin-bottom: 10px;}
+
+.pageheader {		
+	background-color: #666;
+	color: #fff;
+	padding: 200px 0 0 0;
+	font-size: 70px;
+	line-height: 0.6;
+	overflow:hidden;
+	letter-spacing: -1px;	
+}
+
+#pageheader {	
+	padding: 200px 0 0px 0;	
+	background-color:#423434;
+	font-family: Trebuchet MS, Arial, sans-serif;
+	color:#fff;
+	text-transform:uppercase;
+	font-size:90px;
+	font-weight: bold;
+	line-height:.6em;
+	letter-spacing: -0.05em;
+}
+
+.post.single { margin-bottom:0; }
+
+.postdivider {	
+	clear:both;
+	border-bottom: 1px #ddd solid;
+	margin:20px 0;	
+}
+
+.nofeature {	
+	margin-top: 30px;
+	clear:both;
+}
+
+.attachment img {	
+	margin-top: 20px;
+	overflow:hidden;	
+}
+
+.pagelink a {
+	border:1px solid #DDDDDD;
+	font-style:italic;
+	margin:0 1px;
+	padding:1px 6px;
+}
+
+.social a {	font-size:14px; }
+
+.related-posts ul, .recent-posts ul, .popular-posts ul {
+	margin: 0 0 0 3px;
+	list-style-type: none;		
+}
+
+.related-posts ul li { padding: 0; }
+.related-posts .date, .recent-posts .date {	color: #777; }
+
+
+/**********************************************
+	Sidebar 
+***********************************************/
+#sidebar .widgetheading h2, h2.widgettitle {
+	display: inline;
+	padding: 3px 10px;
+	background: #000;		
+	font-family: Arial, Helvetica, sans-serif;
+	color: #fff;
+	font-size:13px;	
+	text-decoration:none;
+}
+
+#sidebar.sidebar2 { margin-right: 0; margin-left: 20px; }
+
+.widgetheading, h2.widgettitle {	
+	margin-bottom: 10px;
+	margin-top:4px;
+}
+
+#sidebar .widget_tag_cloud a {
+	margin: 0 5px;
+	text-transform:capitalize;
+	white-space:nowrap;
+}
+
+#sidebar .widget_text .widgetheading,  #sidebar .widget_sidepages .widgetheading {
+	margin-bottom: 10px;
+}
+	
+#sidebar ul, #sidebar ol {
+	margin: 0;
+	padding: 0;	
+}
+
+#sidebar ul li {
+	list-style-type: none;
+	list-style-image: none;		
+}
+
+#sidebar ul li.widget {
+	margin-bottom: 40px;
+}
+
+#sidebar ul p, #sidebar ul select {
+	margin: 5px 0 8px;
+}
+
+#sidebar ul ul, #sidebar ul ol  {
+	margin: 5px 0 0 0;
+}
+
+#sidebar ul ul ul {
+	margin: 0;
+}
+
+#sidebar ul ul li, #sidebar ul ol li {
+	margin: 3px 0 0;
+	padding: 0;	
+	border-bottom: 1px #eee solid;	
+}
+
+#sidebar ul li.widget_bf_feeds ul li { border-bottom: none; }
+
+#sidebar #recent-posts ul li {
+	background:none;
+}
+
+#sidebar ul li ul li, #sidebar ul li ol li {	
+	display: block;
+	padding: 5px 0;
+}
+
+.widget_bf_feeds ul li {
+	display: block;
+	padding: 5px 0;
+}
+
+.widget_bf_feeds a {
+	display: inline;
+}
+
+.widget_bf_feeds #feedfield {
+	width: 169px;
+	padding:3px;
+	border:#ddd 1px solid;
+	color: #999;
+	margin: 0 5px 5px 0;
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	font-size: 11px !important;
+}
+
+.feedbutton {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	border-color: #ddd;
+	background: #F2F2F2 url(images/grad.png) repeat-x left top;
+	color: #464646;
+	text-decoration: none;
+	font-size: 11px !important;
+	line-height: 16px;
+	padding: 2px 8px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;	
+}
+
+#sidebar .date {
+	color: #000;	
+}
+
+#sidebar .widget_custom_recent_comments a {
+		padding-bottom:0;
+}
+
+#sidebar li.recentcomments {	
+	padding: 5px 0;
+}
+
+
+#sidebar .widget_categories ul li, 
+#sidebar .widget_archive ul li, 
+#sidebar .widget_links ul li {
+	width: 110px;
+	float: left;
+	display: inline;
+	margin-right: 13px;
+	padding: 5px 0 5px 10px;
+	background: transparent url(images/pointer.gif) no-repeat left 12px;
+}
+
+#sidebar img.alignright {float:right; margin:5px 0 5px 10px}
+#sidebar img.alignleft {float:left; margin:5px 10px 5px 0}
+#sidebar a img.alignright {float:right; margin:5px 0 5px 10px}
+#sidebar a img.alignleft {float:left; margin:5px 10px 5px 0}
+
+#sidebar img.size-thumbnail {
+	max-width: 115px;
+	height: auto;	
+}
+
+#sidebar .gallery img {
+	max-width: 115px;
+	height: auto;	
+}

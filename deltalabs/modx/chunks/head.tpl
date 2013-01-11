@@ -31,7 +31,8 @@
 
 <link href="assets/css/custom.css" rel="stylesheet">
 
-[[If? &subject=`[[*parent]]` &operator=`eq` &operand=`5` &then=`<link href="assets/css/special.css" rel="stylesheet">` &else=`<link href="assets/css/special_grid.css" rel="stylesheet">`]]
+[[If? &subject=`[[*parent]]` &operator=`eq` &operand=`5` &then=`<link href="assets/css/special.css" rel="stylesheet">`]]
+[[If? &subject=`[[*id]]` &operator=`5` &then=`<link href="assets/css/special_grid.css" rel="stylesheet">`]]
 
 <link rel="shortcut icon" href="assets/ico/DeltaLabs_mIcon.ico">
 
